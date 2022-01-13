@@ -11,23 +11,23 @@ class Buttons extends Component{
                 {/* 뭐가 좋을까 */}
                     <input type="button" value="create"
                         onClick={
-                            function(e){
+                            (e)=>{
                                 e.preventDefault();
                                 this.props.onChangeMode('create')
-                            }.bind(this)
+                            }
                         }></input>
                 {/* 뭐가 좋을까 */}
                     <input type="button" value="update"
                         onClick={
-                            function(e){
+                            (e)=>{
                                 e.preventDefault(); 
                                 this.props.onChangeMode('update')
-                            }.bind(this)
+                            }
                         }
                     ></input>
                 {/* 뭐가 좋을까 */}
                     <input type="button" value="delete" onClick={
-                        function(e){e.preventDefault(); this.props.onChangeMode('delete')}.bind(this)
+                        (e)=>{e.preventDefault(); this.props.onChangeMode('delete')}
                     }></input>
                 </li>
             </ul>

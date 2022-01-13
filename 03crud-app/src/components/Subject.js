@@ -10,10 +10,12 @@ class Subject extends Component{
         return(
             <header>
                 <h1>
-                    <a href="/" onClick={function(e){
+                    <a href="/" onClick={(e)=>{
                         e.preventDefault(); // 화면의 새로고침 차단
                         this.props.onChangePage(); // 부모가 props를 통해 보내준 함수를 호출
-                        }.bind(this)}>{this.props.title}
+                        }}
+                    >
+                    {this.props.title}
                     </a>
                 </h1>
             {this.props.sub}
